@@ -1,0 +1,115 @@
+body {
+    margin: 0
+}
+
+.header {
+    text-align: center
+}
+
+.one {
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+    width: 8%;
+    margin-bottom: 27px
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.desc {
+    color: gray
+}
+
+.container1 {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 9%;
+}
+
+.part1 {
+    padding: 15px
+}
+
+.part2 {
+    padding: 15px
+}
+
+.part3 {
+    padding: 15px
+}
+
+.container2 {
+    background-image: url("assets/background2.jpg");
+    width: 1400px;
+    height: 250px;
+    background-size: cover;
+    margin-left: 4%;
+}
+
+.head {
+    text-align: center
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 40px
+}
+
+.two {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 7%
+}
+
+.description {
+    color: lightgrey;
+    padding: 5px;
+}
+
+.button {
+    text-align: center;
+    border: 1px white solid;
+    color: white;
+    width: 100px;
+    margin-left: 650px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.container3 {
+    width: 1400px;
+    height: 90px;
+    text-align: center;
+    background-image: url("assets/background3.jpg");
+    margin-left: 60px
+}
+
+.icons {
+    color: white;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: lightgrey
+}
+
+.fab {
+    padding: 15px
+}
+p { font-size: 18px}
