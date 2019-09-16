@@ -16,6 +16,9 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+.wrapper {
+    width: 100%
+}
 input {
     border: none;
 }
@@ -618,7 +621,7 @@ textarea {
     outline: none;
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.16);
     width: 46%;
-    height: 14.9rem;
+    height: 15.4rem;
     font-size: 1.4rem;
     font-family: 'Open Sans', sans-serif;
 
@@ -718,15 +721,136 @@ footer {
 
 
 @media (max-width: 1024px) {
+    body {
+        width: 110rem;
+    }
+
+    .container {
+        width: 95rem;
+    }
+
+    .social_shadow {
+        display: none;
+    }
+
+    .design {
+        display: none;
+    }
 
 }
 
 
 @media (max-width: 640px) {
-    .axit_info {
+    body {
+        width: 64rem;}
+
+    .container {
+        width: 50rem;
+    }
+    .header_logo{
+        display: none;
+    }
+
+    .social_shadow {
+        display: none;
+    }
+    .axit_body {
         display: block;
     }
-    nav {
-        width: 11vw;
+
+    .tabs_img {
+        display: none;
     }
+
+    .benefits {
+        display: none;
+    }
+
+    .design {
+        display: none;
+    }
+    .axit_logo {
+        margin:  5rem 0 5rem 33%
+    }
+
+    .axit_info {
+        padding: 0
+    }
+
+    .axit_form {
+        margin: 0 0 5rem 8.5rem
+    }
+
+    .axit_header:after {
+        margin: 3rem auto 3rem
+    }
+
+    .axit_button {
+        margin: 5rem 0 5rem 38%;
+    }
+
+    .tabs_body {
+        display: block;
+    }
+
+    .tabs {
+        margin: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .tabs_background {
+        box-shadow: none;
+    }
+
+    .tab {
+        margin-top: 7rem;
+        margin-left: 2rem;
+        width: 20rem;
+    }
+
+    .tabs_info {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tabs_header {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 7rem
+    }
+
+    .pricing_cells {
+        display: block;
+        width: 100%;
+    }
+
+    .cell {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .feedback_body {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .feedback_cell {
+        margin-bottom: 5rem;
+    }
+
+
+    .cell_background{
+        width: 35rem;
+    }
+
+    .feedback_info {
+        font-size: 3.2rem;
+    }
+
 }
