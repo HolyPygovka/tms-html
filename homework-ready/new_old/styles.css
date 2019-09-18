@@ -16,9 +16,7 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.wrapper {
-    width: 100%
-}
+
 input {
     border: none;
 }
@@ -250,7 +248,7 @@ nav {
 
 .tabs_background {
     background-color: #f5f5f5;
-    box-shadow: 0 -0.1rem 0.1rem black;
+    box-shadow: 0 -0.1rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .tabs_header {
@@ -722,14 +720,14 @@ footer {
 
 @media (max-width: 1024px) {
     body {
-        width: 110rem;
+        width: 100vw;
     }
 
     .container {
-        width: 95rem;
+        width: 100vw;
     }
 
-    .social_shadow {
+    .social {
         display: none;
     }
 
@@ -742,20 +740,29 @@ footer {
 
 @media (max-width: 640px) {
     body {
-        width: 64rem;}
+        width: 100vw;}
+
+    nav {
+        width: 100vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
 
     .container {
-        width: 50rem;
+        width: 100vw;
     }
     .header_logo{
         display: none;
     }
 
-    .social_shadow {
+    .social {
         display: none;
     }
     .axit_body {
-        display: block;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
     }
 
     .tabs_img {
@@ -770,23 +777,50 @@ footer {
         display: none;
     }
     .axit_logo {
-        margin:  5rem 0 5rem 33%
+        margin: 5rem auto 3rem
     }
 
     .axit_info {
-        padding: 0
+        width: 100vw;
+        padding: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .nav_bars {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 
     .axit_form {
-        margin: 0 0 5rem 8.5rem
+        margin: 0 auto 5rem;
+        width: 100vw;
+    }
+
+    .axit_header {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .axit_desc {
+        text-align: center;
+        font-size: 1.2rem;
     }
 
     .axit_header:after {
         margin: 3rem auto 3rem
     }
 
+
     .axit_button {
-        margin: 5rem 0 5rem 38%;
+        margin: 5rem 0 5rem
     }
 
     .tabs_body {
@@ -802,6 +836,10 @@ footer {
 
     .tabs_background {
         box-shadow: none;
+    }
+
+    .bar_top {
+        width: fit-content ;
     }
 
     .tab {
@@ -827,8 +865,8 @@ footer {
         width: 100%;
     }
 
-    /*.cell {*/
-   /     width: 100%;
+    .cell {
+        width: 100%;
         margin-bottom: 5rem;
     }
 
@@ -846,11 +884,16 @@ footer {
 
 
     .cell_background{
-        width: 35rem;
+        width: 100vw;
     }
 
     .feedback_info {
         font-size: 3.2rem;
     }
+
+    .footer_icon {
+        width: 100vw;
+    }
+
 
 }
